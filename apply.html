@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Job Opening</title>
+    <link rel="stylesheet" href="star.css">
+</head>
+<body>
+    <div class="background-blur">
+        <img src="Assignemnt.svg" alt="" class="background">
+    </div>
+    <div class="form-container">
+        <h2>Create Job Opening</h2>
+        <form>
+            <label for="job-title">Job Title</label>
+            <select id="job-title" name="job-title">
+                <option value="Full Stack Developer">Full Stack Developer</option>
+                <option value="Node Js Developer">Node Js Developer</option>
+                <option value="UI/UX Designer">UI/UX Designer</option>>
+            </select>
+            <label for="company-name">Company Name</label>
+            <select id="Company" name="Company">
+                <option value="Amazon">Amazon</option>
+                <option value="Swiggy">Swiggy</option>
+                <option value="Microsoft">Microsoft</option>
+            </select>
+            <label for="location">Location</label>
+            <select id="location" name="location">
+                <option value="chennai">Chennai</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="pune">Pune</option>
+                <option value="mumbai">Mumbai</option>
+            </select>
+
+            <label for="job-type">Job Type</label>
+            <select id="job-type" name="job-type">
+                <option value="internship">Internship</option>
+                <option value="full-time" selected>Full Time</option>
+                <option value="part-time">Part Time</option>
+                <option value="contract">Contract</option>
+            </select>
+
+            <label for="application-deadline">Application Deadline</label>
+            <input type="date" id="application-deadline" name="application-deadline">
+
+            <label for="salary-range">Salary Range</label>
+            <div class="salary-range">
+                <input type="number" id="salary-min" name="salary-min" value="0">
+                <span>to</span>
+                <input type="number" id="salary-max" name="salary-max" value="1200000">
+            </div>
+
+            <label for="job-description">Job Description</label>
+            <textarea id="job-description" name="job-description" placeholder="Please share a description to let the candidate know more about the job."></textarea>
+
+            <div class="form-actions">
+                <button type="button" class="save-draft">Save Draft</button>
+                <button type="submit" class="publish">Publish</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
